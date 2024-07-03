@@ -1,0 +1,5 @@
+Taks:
+
+craft an application that suggests tailored carrer path based on user`s  skills, interests and goals make 
+help individuals make  informed desicions about their professional jounery by providing personalized insights and
+guidance.

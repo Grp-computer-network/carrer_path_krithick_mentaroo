@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+    background-color:#EAEAEA;
+        }
+        .bar{
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .icon{
+             margin-left: 10px;
+        }
+        .icon img {
+            width:24px;
+            height: 24px;
+        }
+        input{
+            border: none;
+            outline: 1;
+            flex:1;
+            padding: 15px;
+            border-radius:10px;
+        }
+        img{
+            width: 400px;
+            height:300px;
+            border-radius: 5px;
+        }
+        .img{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border:2px solid gray;
+            width: 450px;
+            height:350px;
+            background: burlywood;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        h2{
+            margin: 5px;
+        }
+        .img-wrapper{
+            display: flex;
+        }
+        @media screen and (max-width:450px){
+    .img-wrapper{
+        flex-direction: column;
+    }
+    img{
+        width:350px;
+    }
+    .img{
+        width:350px;
+    }
+}
+    </style>
+</head>
+<body>
+   <div class="bar">
+    <input type="search" placeholder="Enter for others" id="searchInput">
+    <div class="icon">
+       <button style="border: none;"  onclick="search()"><img src="magnifying-glass.png" alt=""></button>
+    </div>
+   </div>
+
+   <center>
+   <h1>Select one </h1>
+   </center>
+   <div class="img-wrapper">
+    <div class="img">
+        <h2 >Student</h2>
+   <a href="student.html"><img src="school-students-digital-art-style-education-day.jpg" alt="img-1"></a>
+</div>
+    <div class="img">
+        <h2>College student</h2>
+    <img src="clg..jpg" alt="img-2">
+</div>
+<div class="img">
+    <h2>Working-professional</h2>
+    <img src="work.jpg" alt="img-3">
+</div>
+   </div>
+   <script>
+      function search(){
+        var input = document.getElementById("searchInput").value.toLowerCase();
+
+        var divs = document.querySelectorAll(".img-wrapper");
+
+        divs.forEach(function(div){
+         var imgALt = div.querySelector("img").alt.toLowerCase();
+         if(imgALt.includes(input)){
+            div.classList.add("active");
+         }else{
+            div.classList.remove('active');
+         }
+        });
+    }
+    </script>
+</body>
+</html>
