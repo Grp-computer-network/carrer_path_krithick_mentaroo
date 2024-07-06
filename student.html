@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            font-family: "poppins";
+        }
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 50px;
+        }
+        button{
+            padding: 20px;
+            margin: 10px;
+            font-size: larger;
+            font-weight: 500;
+            border-radius: 10px;
+        }
+        ul li{
+            list-style: none;
+            padding: 10px;
+        }
+        body{
+    background-color:#EAEAEA;
+}
+.btn{
+    padding:15px;
+    margin:10px;
+    font-size: medium;
+    font-weight: 400;
+    border-radius: 12px;
+}
+button:hover{
+    color:#fff;
+    background-color: rgb(30, 138, 138);
+    border: 1px solid #fff;
+}
+.btn_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.li{
+    color:blue;
+    list-style-type: circle;
+}
+.hiddenList {
+    display: none;
+}
+
+.dotted {
+    list-style-type: circle; /* or disc for solid bullets */
+}
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <button id="toggleButton">10th student</button>
+        <ul id="myList">
+            <li>
+                <details>
+                    <summary>Diploma</summary>
+                        <p>
+                            A diploma is a certificate awarded by an educational institution to signify that someone has successfully completed a particular course of study. Some popular diploma courses include:
+                            <br>
+                            <ul>
+                                <li>Diploma in Computer Science</li>
+                                <li> Diploma in Business Management</li>
+                                <li>Diploma in Graphic Design</li>
+                                <li>Diploma in Nursing</li>
+                                <li>Diploma in Engineering</li>
+                                <li>Diploma in Culinary Arts</li>
+                                <li>Diploma in Hotel Management</li>
+                                <li>Diploma in Education</li>
+                            </ul>
+                           </p>
+                    
+                </details>
+            </li>
+            <li><details>
+                <summary>Competitive Exams</summary>
+                <p>Here are the top entrance and competitive exams after 10th:
+                    <ul>
+                        <li>National Science Talent Search Examination (NSTSE)</li>
+                        <li> National Talent Search Examination (NTSE)</li>
+                        <li>Kishore Vigyanik Protsahan Yojana (KVPY)</li>
+                        <li>Assessment of Scholastic Tests through Technological Testing (ASSET)</li>
+                        <li> Indian National Mathematical Olympiad [INMO</li>
+                    </ul>
+                   </p>
+            </details></li>
+            <li>Below are the listed groups in your higher studies</li>
+            <li><details>
+                <summary>Science</summary>
+                <p>When it comes to science stream, some of the important subjects present in the curriculum are
+                  <br> <br>
+                    1. Physics
+                   2.Chemistry
+                   3. English
+                   4. Mathematics/Biology
+                   5. Computer Science
+                   6.Tamil <br>
+                   <br>
+                    Among Mathematics and Biology, students have to choose one subject</p>
+            </details></li>
+            <li><details>
+                <summary>Commerce</summary>
+                <p>In commerce, the main subjects typically include <br>
+                    <br>
+                    Commerce, Accountancy, Business Studies, Economics, and English.</p>
+            </details></li>
+            <li><details>
+                <summary>Humanities/Arts</summary>
+            </details></li>
+        </ul>
+        <button id="togglebutton">12th student</button>
+        
+        <ul id="myL" class="btn_wrapper">
+            <li >
+                <h3>Science-stream</h3>
+                <button class="toggleButton" data-target="list1" 
+                style=" 
+                padding:15px;
+                margin:10px;
+                font-size: medium;
+                font-weight: 400;
+                border-radius: 12px;
+                ">Degree</button>
+                <ul id="list1" class="hiddenList dotted">
+                    <li><details>
+                        <summary>Bsc-(computer-science)</summary>
+                        <p>
+                            A Bachelor of Science in Computer Science (B.Sc. CS) is an undergraduate degree focused on the study of computer systems, computational theory, programming, and applications. <br>
+                            <br>
+                            <h2>Core Subjects</h2>
+                            <ul>
+                                <li class="li">Introduction to Programming</li>
+                                <li class="li">Data Structures and Algorithms</li>
+                                <li class="li">Computer Architecture and Organization</li>
+                                <li class="li">Database Management Systems</li>
+                                <li class="li">Operating Systems</li>
+                                <li class="li">Discrete Mathematics</li>
+                                <li class="li">Theory of Computation</li>
+                                <li class="li">Software Engineering</li>
+                                <li class="li">Computer Networks</li>
+                                <li class="li">Artificial Intelligence and Machine Learning</li>
+                                <li class="li">Web Technologies</li>
+                            </ul>
+                        </p>
+                    </details></li>
+                    <li><details>
+                        <summary>Bsc-(Physics)</summary>
+                        <p>The Bachelor of Science in Physics (B.Sc. Physics) is an undergraduate degree that provides a comprehensive understanding of the fundamental principles governing the natural world. The course covers a broad range of topics in classical and modern physics, equipping students with both theoretical knowledge and practical skills.</p>
+    
+                        <h2>Core Subjects</h2>
+                        <ul>
+                            <li>Mechanics</li>
+                            <li>Electromagnetism</li>
+                            <li>Thermodynamics</li>
+                            <li>Optics</li>
+                            <li>Waves and Oscillations</li>
+                            <li>Modern Physics</li>
+                            <li>Mathematical Physics</li>
+                            <li>Quantum Mechanics</li>
+                            <li>Statistical Mechanics</li>
+                            <li>Solid State Physics</li>
+                            <li>Nuclear Physics</li>
+                            <li>Computational Physics</li>
+                        </ul>
+                    </details></li>
+                    <li><details>
+                        <summary>
+                            Bsc-(Chemistry)
+                        </summary>
+                        <p>The Bachelor of Science in Chemistry (B.Sc. Chemistry) is an undergraduate degree that focuses on the study of matter, its properties, composition, structure, and the changes it undergoes during chemical reactions. The course provides a thorough understanding of various branches of chemistry, including organic, inorganic, physical, and analytical chemistry, along with practical laboratory skills.</p>
+    
+                        <h2>Core Subjects</h2>
+                        <ul>
+                            <li>General Chemistry</li>
+                            <li>Organic Chemistry</li>
+                            <li>Inorganic Chemistry</li>
+                            <li>Physical Chemistry</li>
+                            <li>Analytical Chemistry</li>
+                            <li>Biochemistry</li>
+                            <li>Environmental Chemistry</li>
+                            <li>Industrial Chemistry</li>
+                            <li>Polymer Chemistry</li>
+                            <li>Material Science</li>
+                            <li>Computational Chemistry</li>
+                            <li>Laboratory Techniques</li>
+                        </ul>
+                    </details></li>
+                    <li><details>
+                        <summary>Bsc-(plant-biology)</summary>
+                        <p>The Bachelor of Science in Plant Biology (B.Sc. Plant Biology) is an undergraduate degree that explores the biology of plants, their structure, function, growth, evolution, and ecological relationships. The course provides comprehensive knowledge of plant science, including genetics, physiology, ecology, and biotechnology, along with practical field and laboratory skills.</p>
+    
+                        <h2>Core Subjects</h2>
+                        <ul>
+                            <li>Plant Anatomy</li>
+                            <li>Plant Physiology</li>
+                            <li>Plant Ecology</li>
+                            <li>Plant Genetics</li>
+                            <li>Plant Evolution</li>
+                            <li>Plant Biotechnology</li>
+                            <li>Plant Pathology</li>
+                            <li>Plant Developmental Biology</li>
+                            <li>Taxonomy and Systematics</li>
+                            <li>Environmental Biology</li>
+                            <li>Medicinal Plants</li>
+                            <li>Practical Field and Laboratory Techniques</li>
+                        </ul>
+                    </details></li>
+                    <li><details><summary>
+                        Bsc-(Software-application)
+                    </summary>
+                    <p>The Bachelor of Science in Software Applications (B.Sc. Software Applications) is an undergraduate degree focused on the design, development, and maintenance of software applications. The course covers a wide range of topics, including programming, software engineering, database management, web technologies, and mobile application development, equipping students with both theoretical knowledge and practical skills.</p>
+    
+                    <h2>Core Subjects</h2>
+                    <ul>
+                        <li>Introduction to Programming</li>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Software Engineering</li>
+                        <li>Database Management Systems</li>
+                        <li>Web Technologies</li>
+                        <li>Mobile Application Development</li>
+                        <li>Operating Systems</li>
+                        <li>Computer Networks</li>
+                        <li>Object-Oriented Programming</li>
+                        <li>Human-Computer Interaction</li>
+                        <li>Software Project Management</li>
+                        <li>Cloud Computing</li>
+                    </ul>
+                </details></li>
+                <li><details>
+                    <summary>
+                        Bsc-(psychology)
+                    </summary>
+                    <p>The Bachelor of Science in Psychology (B.Sc. Psychology) is an undergraduate degree that focuses on the scientific study of behavior and mental processes. This course provides a comprehensive understanding of various psychological theories, research methods, and practical applications across different fields of psychology.</p>
+    
+                    <h2>Core Subjects</h2>
+                    <ul>
+                        <li>Introduction to Psychology</li>
+                        <li>Biological Psychology</li>
+                        <li>Cognitive Psychology</li>
+                        <li>Social Psychology</li>
+                        <li>Developmental Psychology</li>
+                        <li>Abnormal Psychology</li>
+                        <li>Personality Psychology</li>
+                        <li>Research Methods in Psychology</li>
+                        <li>Statistics for Psychology</li>
+                        <li>Psychological Testing and Assessment</li>
+                        <li>Health Psychology</li>
+                        <li>Counseling Psychology</li>
+                    </ul>
+                </details></li>
+                <li><details>
+                    <summary>Bsc-(Mathematics)</summary>
+                    <p>The Bachelor of Science in Mathematics (B.Sc. Mathematics) is an undergraduate degree that focuses on the study of numbers, quantity, structures, space, and change. This course provides a deep understanding of various branches of mathematics, including pure mathematics, applied mathematics, and statistics, along with practical problem-solving skills.</p>
+    
+                    <h2>Core Subjects</h2>
+                    <ul>
+                        <li>Calculus</li>
+                        <li>Algebra</li>
+                        <li>Differential Equations</li>
+                        <li>Linear Algebra</li>
+                        <li>Real Analysis</li>
+                        <li>Complex Analysis</li>
+                        <li>Number Theory</li>
+                        <li>Probability Theory</li>
+                        <li>Statistics</li>
+                        <li>Numerical Methods</li>
+                        <li>Operations Research</li>
+                        <li>Discrete Mathematics</li>
+                    </ul>
+                </details></li>
+                <li><details><summary>Bsc-(Marine-Biology)</summary>
+                    <p>The Bachelor of Science in Marine Biology (B.Sc. Marine Biology) is an undergraduate degree that focuses on the study of marine organisms, their habitats, and ecosystems. This course explores various aspects of marine life, including biology, ecology, conservation, and oceanography, preparing students for careers related to marine science and conservation.</p>
+    
+                    <h2>Core Subjects</h2>
+                    <ul>
+                        <li>Marine Ecology</li>
+                        <li>Marine Biology</li>
+                        <li>Oceanography</li>
+                        <li>Marine Conservation</li>
+                        <li>Marine Fisheries</li>
+                        <li>Marine Microbiology</li>
+                        <li>Marine Biotechnology</li>
+                        <li>Coral Reef Biology</li>
+                        <li>Marine Pollution</li>
+                        <li>Marine Mammalogy</li>
+                        <li>Coastal Zone Management</li>
+                        <li>Research Methods in Marine Biology</li>
+                    </ul>
+                </details></li>
+            <li><details><summary>Bsc-(Agriculture)</summary>
+                <p>The Bachelor of Science in Agriculture (B.Sc. Agriculture) is an undergraduate degree that focuses on various aspects of agriculture, including crop production, soil science, agricultural economics, and farm management. This course equips students with knowledge and skills in agricultural practices, technologies, and sustainable farming methods.</p>
+    
+    <h2>Core Subjects</h2>
+    <ul>
+        <li>Agronomy</li>
+        <li>Soil Science</li>
+        <li>Horticulture</li>
+        <li>Plant Pathology</li>
+        <li>Entomology</li>
+        <li>Agricultural Economics</li>
+        <li>Animal Husbandry</li>
+        <li>Agribusiness Management</li>
+        <li>Crop Physiology</li>
+        <li>Agricultural Engineering</li>
+        <li>Genetics and Plant Breeding</li>
+        <li>Extension Education</li>
+    </ul>
+            </details></li>    
+            <li><details><summary>Bsc-(statistics)</summary>
+                <p>The Bachelor of Science in Statistics (B.Sc. Statistics) is an undergraduate degree that focuses on the collection, analysis, interpretation, and presentation of data. This course provides a strong foundation in statistical theory, methods, and applications across various fields such as business, economics, social sciences, and healthcare.</p>
+    
+                <h2>Core Subjects</h2>
+                <ul>
+                    <li>Descriptive Statistics</li>
+                    <li>Probability Theory</li>
+                    <li>Inferential Statistics</li>
+                    <li>Statistical Computing</li>
+                    <li>Regression Analysis</li>
+                    <li>Design of Experiments</li>
+                    <li>Multivariate Analysis</li>
+                    <li>Time Series Analysis</li>
+                    <li>Sampling Techniques</li>
+                    <li>Statistical Quality Control</li>
+                    <li>Biostatistics</li>
+                    <li>Statistical Software Applications</li>
+                </ul>
+            </details></li>
+            </ul>
+
+            </li>
+            <li>
+                <h3>Commerce</h3>
+                <button class="toggleButton" data-target="list2" clas="btn"
+                style=" 
+                padding:15px;
+                margin:10px;
+                font-size: medium;
+                font-weight: 400;
+                border-radius: 12px;
+                "
+                >Degree</button>
+            
+                <ul id="list2" class="hiddenList dotted">
+                    <li ><details><summary>
+                        B com-(General)
+                    </summary>
+                    <p>The Bachelor of Commerce (B.Com) is an undergraduate degree that focuses on the study of commerce, accounting, economics, management, and other related disciplines. This course provides a strong foundation in business principles, financial accounting, corporate law, economics, and business communication.</p>
+    
+                    <h2>Core Subjects</h2>
+                    <ul>
+                        <li>Financial Accounting</li>
+                        <li>Cost Accounting</li>
+                        <li>Business Economics</li>
+                        <li>Corporate Accounting</li>
+                        <li>Business Management</li>
+                        <li>Business Law</li>
+                        <li>Financial Management</li>
+                        <li>Income Tax</li>
+                        <li>Human Resource Management</li>
+                        <li>Marketing Management</li>
+                        <li>Banking and Insurance</li>
+                        <li>Entrepreneurship Development</li>
+                    </ul>
+                </details></li>
+                    <li ><details>
+                        <summary>BBA-(Bussiness Adminstration)</summary>
+                        <p>The Bachelor of Business Administration (BBA) is an undergraduate degree that focuses on the study of business management and administration. This course provides a comprehensive understanding of business principles, management practices, leadership skills, and organizational behavior.</p>
+    
+                        <h2>Core Subjects</h2>
+                        <ul>
+                            <li>Principles of Management</li>
+                            <li>Marketing Management</li>
+                            <li>Financial Management</li>
+                            <li>Human Resource Management</li>
+                            <li>Operations Management</li>
+                            <li>Business Ethics</li>
+                            <li>Business Law</li>
+                            <li>Organizational Behavior</li>
+                            <li>Entrepreneurship Development</li>
+                            <li>Managerial Economics</li>
+                            <li>Strategic Management</li>
+                            <li>International Business</li>
+                        </ul>
+                    </details></li>
+                    <li ><details><summary>
+                        BSW-(Social Work)
+                    </summary></details></li>
+                    <li><details>
+                        <summary>BFT-(Forgien Trade)</summary>
+                        <p>The Bachelor of Foreign Trade (BFT) is an undergraduate degree that focuses on the study of international business, trade, commerce, and economics. This course prepares students for careers in global trade, export-import management, international marketing, logistics, and supply chain management.</p>
+    
+                        <h2>Core Subjects</h2>
+                        <ul>
+                            <li>International Trade and Finance</li>
+                            <li>Export-Import Procedures and Documentation</li>
+                            <li>International Marketing</li>
+                            <li>Global Supply Chain Management</li>
+                            <li>Trade Policies and Agreements</li>
+                            <li>Foreign Exchange Management</li>
+                            <li>International Business Law</li>
+                            <li>Strategic Management for Exporters</li>
+                            <li>Cross-cultural Management</li>
+                            <li>Global Business Environment</li>
+                            <li>Business Communication Skills</li>
+                            <li>Research Methods in International Trade</li>
+                        </ul>
+                    </details></li>
+                    <li><details><summary>
+                        B com-(Coprate Secretaryship)
+                    </summary>
+                    <p>The Bachelor of Commerce (B.Com) in Corporate Secretaryship is an undergraduate degree that focuses on company law, corporate governance, and secretarial practices. This course prepares students for careers as company secretaries, compliance officers, and corporate legal advisors.</p>
+    
+    <h2>Core Subjects</h2>
+    <ul>
+        <li>Company Law</li>
+        <li>Corporate Governance</li>
+        <li>Corporate Accounting</li>
+        <li>Business Communication</li>
+        <li>Business Law</li>
+        <li>Financial Management</li>
+        <li>Corporate Taxation</li>
+        <li>Secretarial Practice</li>
+        <li>Legal Regulatory Framework</li>
+        <li>Business Ethics and Corporate Social Responsibility</li>
+        <li>Principles of Management</li>
+        <li>Financial Reporting and Analysis</li>
+    </ul>
+                </details></li>
+
+                <li><details><summary>
+                    B com-(Accounting & Finance)
+                </summary>
+                <p>The Bachelor of Commerce (B.Com) in Accounting and Finance is an undergraduate degree that focuses on the study of financial accounting, management accounting, financial management, and taxation. This course provides students with the knowledge and skills necessary for careers in accounting, finance, auditing, and related fields.</p>
+    
+                <h2>Core Subjects</h2>
+                <ul>
+                    <li>Financial Accounting</li>
+                    <li>Cost Accounting</li>
+                    <li>Management Accounting</li>
+                    <li>Corporate Accounting</li>
+                    <li>Financial Management</li>
+                    <li>Taxation</li>
+                    <li>Auditing</li>
+                    <li>Business Law</li>
+                    <li>Financial Markets and Institutions</li>
+                    <li>Investment Management</li>
+                    <li>Business Mathematics and Statistics</li>
+                    <li>Economics</li>
+                </ul>
+            </details></li>
+               <li><details><summary>
+                B com-(Bank-Management)
+               </summary>
+               <p>The Bachelor of Commerce (B.Com) in Banking Management is an undergraduate degree that focuses on the principles and practices of banking, financial services, and banking regulations. This course prepares students for careers in banking, financial analysis, investment banking, and related fields.</p>
+    
+               <h2>Core Subjects</h2>
+               <ul>
+                   <li>Principles of Banking</li>
+                   <li>Financial Accounting</li>
+                   <li>Banking Laws and Regulations</li>
+                   <li>Financial Management</li>
+                   <li>Business Economics</li>
+                   <li>Risk Management in Banking</li>
+                   <li>Corporate Finance</li>
+                   <li>Investment Banking</li>
+                   <li>Banking Operations and Services</li>
+                   <li>Marketing of Banking Services</li>
+                   <li>Management Information Systems</li>
+                   <li>International Banking and Finance</li>
+               </ul>
+            </details></li>
+            <li><details><summary>
+                B com(computer Application)
+            </summary>
+            <p>The Bachelor of Commerce (B.Com) in Computer Applications is an undergraduate degree that combines commerce with computer applications. This course prepares students for careers in business, finance, and information technology by providing knowledge in commerce subjects as well as computer programming, software development, and IT management.</p>
+    
+            <h2>Core Subjects</h2>
+            <ul>
+                <li>Financial Accounting</li>
+                <li>Business Economics</li>
+                <li>Cost Accounting</li>
+                <li>Management Accounting</li>
+                <li>Corporate Accounting</li>
+                <li>Business Law</li>
+                <li>Principles of Management</li>
+                <li>Financial Management</li>
+                <li>Computer Fundamentals</li>
+                <li>Programming in C/C++</li>
+                <li>Database Management Systems</li>
+                <li>Internet and Web Designing</li>
+                <li>Software Engineering</li>
+                <li>E-commerce</li>
+                <li>Management Information Systems</li>
+            </ul>
+        </details></li>
+        <li><details><summary>
+            B A-(Economics)
+        </summary>
+        <p>The Bachelor of Arts (BA) in Economics is an undergraduate degree that focuses on the study of economic theories, principles, and practices. This course provides students with a deep understanding of how economies function, the role of markets, and the impact of government policies on economic outcomes. It prepares students for careers in economics, finance, policy analysis, and related fields.</p>
+    
+        <h2>Core Subjects</h2>
+        <ul>
+            <li>Microeconomics</li>
+            <li>Macroeconomics</li>
+            <li>Econometrics</li>
+            <li>International Economics</li>
+            <li>Development Economics</li>
+            <li>Public Finance</li>
+            <li>Monetary Economics</li>
+            <li>Environmental Economics</li>
+            <li>Labour Economics</li>
+            <li>Industrial Economics</li>
+            <li>Economics of Social Issues</li>
+            <li>Indian Economy</li>
+        </ul>
+    </details></li>
+                </ul>
+            </li>
+            <li >
+               
+            </li>
+            <li >
+                <h3>Both-stream can pursue</h3>
+                <button class="toggleButton" data-target="list3" clas="btn"
+                style=" 
+                padding:15px;
+                margin:10px;
+                font-size: medium;
+                font-weight: 400;
+                border-radius: 12px;
+                "
+                >Degree</button>
+             
+                <ul id="list3" class="hiddenList dotted">
+                    <li><details><summary>BCA-(computer Application)
+                    </summary>
+                    <p>The Bachelor of Computer Applications (BCA) is an undergraduate degree that focuses on computer science and its applications. This course provides students with the knowledge and skills needed for careers in software development, systems analysis, web development, and IT consulting.</p>
+    
+                    <h2>Core Subjects</h2>
+                    <ul>
+                        <li>Programming Languages (C, C++, Java, etc.)</li>
+                        <li>Database Management Systems</li>
+                        <li>Operating Systems</li>
+                        <li>Data Structures</li>
+                        <li>Software Engineering</li>
+                        <li>Computer Networks</li>
+                        <li>Web Technologies</li>
+                        <li>Object-Oriented Programming</li>
+                        <li>Mathematics for Computer Science</li>
+                        <li>Data Communication and Networking</li>
+                        <li>Information Security</li>
+                        <li>Mobile Application Development</li>
+                    </ul></details></li>
+                    <li><details><summary>BHM-(Hotel Management)</summary>
+                        <p>The Bachelor of Hotel Management (BHM) is an undergraduate degree that focuses on the study of hospitality management and operations. This course provides students with the skills and knowledge necessary for careers in hotel management, food and beverage management, tourism, and related fields.</p>
+    
+                        <h2>Core Subjects</h2>
+                        <ul>
+                            <li>Front Office Management</li>
+                            <li>Food Production</li>
+                            <li>Food and Beverage Service</li>
+                            <li>Housekeeping Management</li>
+                            <li>Hotel Accounting</li>
+                            <li>Hospitality Marketing</li>
+                            <li>Hotel Law</li>
+                            <li>Tourism Management</li>
+                            <li>Hospitality Management</li>
+                            <li>Event Management</li>
+                            <li>Human Resource Management</li>
+                            <li>Business Communication</li>
+                            <li>Facility Planning</li>
+                        </ul></details></li>
+                    <li><details><summary>BTTM(Tourism & Travel Management)</summary>
+                    
+                        <p>The Bachelor of Travel and Tourism Management (BTTM) is an undergraduate degree that focuses on the study of travel, tourism, and hospitality management. This course provides students with the knowledge and skills necessary for careers in travel agencies, tour operations, hotel management, and related fields.</p>
+    
+                        <h2>Core Subjects</h2>
+                        <ul>
+                            <li>Introduction to Tourism</li>
+                            <li>Tourism Geography</li>
+                            <li>Travel Agency and Tour Operations</li>
+                            <li>Hospitality Management</li>
+                            <li>Tourism Marketing</li>
+                            <li>Customer Service in Tourism</li>
+                            <li>Tourism Policy and Planning</li>
+                            <li>Eco-Tourism</li>
+                            <li>Event Management</li>
+                            <li>Airline Management</li>
+                            <li>Travel Documentation and Ticketing</li>
+                            <li>Tourism Economics</li>
+                            <li>Internship and Project Work</li>
+                        </ul>
+                    </details></li>
+                    <li><details><summary>BA தமிழ் பாடத்திட்ட சுருக்கம்</summary>
+                        <p>இலக்கியம், மொழியியல், மற்றும் தமிழின் பண்பாட்டுப் பாரம்பரியம் ஆகியவற்றைச் சார்ந்த விரிவான புரிதலை வழங்குகிறது. கல்வி, ஆராய்ச்சி, மொழிபெயர்ப்பு, மற்றும் ஊடகம் போன்ற துறைகளில் வேலைவாய்ப்புகளுக்குத் தயார்படுத்துகிறது.</p>
+    
+                        <h2>முக்கிய பாடங்கள்</h2>
+                        <ul>
+                            <li>தமிழ் தொகுதி</li>
+                            <li>தமிழ் சிறுகதைகள்</li>
+                            <li>தமிழ் நாடகங்கள்</li>
+                            <li>தமிழ் புதினங்கள்</li>
+                            <li>தமிழ் இலக்கிய வரலாறு</li>
+                            <li>தமிழ் இலக்கணம் மற்றும் மொழியியல்</li>
+                            <li>நவீன தமிழ் இலக்கியம்</li>
+                            <li>சங்கம் தமிழ் இலக்கியம்</li>
+                            <li>ஒப்பிலக்கியம்</li>
+                            <li>களப்புலம் மற்றும் பண்பாட்டுக் களங்கள்</li>
+                            <li>தமிழ் கல்வெட்டியல் மற்றும் உரைநூல் ஆய்வு</li>
+                            <li>மொழிபெயர்ப்பு படிப்புகள்</li>
+                        </ul>
+                    </details></li>
+                    <li><details><summary>BA-(English)</summary>
+                        <p>The Bachelor of Arts (BA) in English is an undergraduate degree that focuses on the study of English language, literature, and culture. This course provides students with a comprehensive understanding of English literary works, linguistic structures, and critical analysis, preparing them for careers in education, journalism, publishing, creative writing, and various fields that require strong communication skills.</p>
+    
+                        <h2>Core Subjects</h2>
+                        <ul>
+                            <li>English Literature (Classical and Modern)</li>
+                            <li>English Language and Linguistics</li>
+                            <li>British Literature</li>
+                            <li>American Literature</li>
+                            <li>World Literature in English Translation</li>
+                            <li>Literary Criticism and Theory</li>
+                            <li>Drama and Theatre Studies</li>
+                            <li>Poetry and Poetics</li>
+                            <li>Prose Fiction</li>
+                            <li>Comparative Literature</li>
+                            <li>Creative Writing</li>
+                            <li>Communication Skills</li>
+                            <li>Research Methodology</li>
+                        </ul>
+                    </details></li>
+                </ul>
+            </li>
+            <li>
+                <h3>Other-Courses</h3>
+                <button class="toggleButton" data-target="list4" clas="btn" 
+                style=" 
+                padding:15px;
+                margin:10px;
+                font-size: medium;
+                font-weight: 400;
+                border-radius: 12px;
+                "
+                >Degree</button>
+             
+                <ul id="list4" class="hiddenList dotted">
+                    <li><details><summary>CA-(Chareted Accountant)</summary>
+                        <p>The Chartered Accountancy (CA) qualification is a professional designation that demonstrates expertise in accounting, auditing, taxation, financial management, and consultancy.</p>
+    
+                        <h2>Course Structure</h2>
+                        <ul>
+                            <li><strong>Foundation Course (Entry Level):</strong>
+                                <ul>
+                                    <li>Basics of Accounting</li>
+                                    <li>Mercantile Law</li>
+                                    <li>General Economics</li>
+                                    <li>Quantitative Aptitude</li>
+                                </ul>
+                            </li>
+                            <li><strong>Intermediate Course (Integrated Professional Competence Course - IPCC):</strong>
+                                <ul>
+                                    <li>Group I:
+                                        <ul>
+                                            <li>Accounting</li>
+                                            <li>Business Laws, Ethics, and Communication</li>
+                                            <li>Cost Accounting and Financial Management</li>
+                                        </ul>
+                                    </li>
+                                    <li>Group II:
+                                        <ul>
+                                            <li>Advanced Accounting</li>
+                                            <li>Auditing and Assurance</li>
+                                            <li>Information Technology and Strategic Management</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><strong>Final Course:</strong>
+                                <ul>
+                                    <li>Group I:
+                                        <ul>
+                                            <li>Financial Reporting</li>
+                                            <li>Strategic Financial Management</li>
+                                            <li>Advanced Auditing and Professional Ethics</li>
+                                            <li>Corporate and Economic Laws</li>
+                                        </ul>
+                                    </li>
+                                    <li>Group II:
+                                        <ul>
+                                            <li>Strategic Cost Management and Performance Evaluation</li>
+                                            <li>Elective Paper (Choose one from various options like Risk Management, International Taxation)</li>
+                                            <li>Direct Tax Laws and International Taxation</li>
+                                            <li>Indirect Tax Laws</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    
+                        <h2>Career Opportunities</h2>
+                        <ul>
+                            <li>Audit and Assurance</li>
+                            <li>Financial Reporting</li>
+                            <li>Taxation</li>
+                            <li>Consultancy</li>
+                            <li>Finance</li>
+                            <li>Government Services</li>
+                        </ul>
+                    
+                        <h2>Professional Designation</h2>
+                        <p>Upon completion of all levels and a three-year practical training period, candidates receive the designation of Chartered Accountant (CA) and become members of the Institute of Chartered Accountants of India (ICAI).</p>
+                    </details></li>
+                    <li><details><summary>Taking up TNPSC Exams </summary>
+                        <h1>Top 10 Popular TNPSC Exams</h1>
+                        <ul>
+                            <li><strong>Group 1 Services Examination:</strong> Includes various administrative positions like Deputy Collector, Deputy Superintendent of Police.</li>
+                            <li><strong>Group 2 Services Examination:</strong> Combined Civil Services Examination - II, includes positions like Sub Registrar, Assistant Section Officer.</li>
+                            <li><strong>Group 2A Services Examination:</strong> Non-Interview Posts, includes positions like Personal Clerk, Assistant in various departments.</li>
+                            <li><strong>Group 4 Services Examination:</strong> Village Administrative Officer (VAO), Junior Assistant, Typist, etc.</li>
+                            <li><strong>Combined Engineering Services Examination:</strong> For various engineering positions in government departments.</li>
+                            <li><strong>Combined Subordinate Services Examination - I (CSSE-I):</strong> Includes positions like Junior Co-operative Auditor, Assistant Inspector.</li>
+                            <li><strong>Assistant Director of Industrial Safety and Health Examination:</strong> For technical positions related to industrial safety.</li>
+                            <li><strong>Assistant Public Prosecutor Examination:</strong> For positions in the Tamil Nadu State Prosecution Service.</li>
+                            <li><strong>Combined Civil Services Examination - III (Group 3A Services):</strong> Includes positions like Accountant, Auditor in various departments.</li>
+                            <li><strong>Assistant Commissioner of Labour Examination:</strong> For positions related to labour welfare and enforcement.</li>
+                        </ul>
+                        <p>These exams cover a wide range of administrative, technical, and clerical positions within the state government of Tamil Nadu. Each exam has specific eligibility criteria and job roles, so candidates should carefully review the details before applying.</p>
+                    </body>
+                    </details></li>
+                </ul>
+            </li>
+        
+        </ul>
+
+    </div>
+
+        <script>
+            document.getElementById("toggleButton").addEventListener("click", function() {
+                var list = document.getElementById("myList");
+                if (list.style.display === "none") {
+                    list.style.display = "block";
+                    this.textContent = "Here are course you can pursue";
+                } else {
+                    list.style.display = "none";
+                    this.textContent = "10th student";
+                }
+            });
+        </script>
+        <script>
+            document.getElementById("togglebutton").addEventListener("click", function() {
+                var list = document.getElementById("myL");
+                if (list.style.display === "none") {
+                    list.style.display = "block";
+                    this.textContent = "Here are course you can pursue";
+                } else {
+                    list.style.display = "none";
+                    this.textContent = "12th student ";
+                }
+            });
+            document.getElementById("toggleLink").addEventListener("click",function(){
+                    var paragraph =document.getElementById("mypara");
+                    if(paragraph.style.display==="none"){
+                        paragraph.style.display="block";
+                        this.textContent="Hide paragraph";
+                    }
+                    else{
+                        paragraph.style.display="none";
+                        this.textContent="show paragraph"
+                    }
+            });
+        </script>
+        <script>
+             document.querySelectorAll('.toggleButton').forEach(button => {
+            button.addEventListener('click', function() {
+                const targetListId = this.getAttribute('data-target');
+                const targetList = document.getElementById(targetListId);
+        
+                if (targetList.style.display === 'none' || targetList.style.display === '') {
+                    targetList.style.display = 'block';
+                    this.textContent = "Here are course you can purse";
+                } else {
+                    targetList.style.display = 'none';
+                    this.textContent = "Degree";
+                }
+            });
+        });
+        </script>
+</body>
+</html>
