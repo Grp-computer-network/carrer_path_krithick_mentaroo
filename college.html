@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College</title>
+    <head>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            font-family: "poppins";
+        }
+        body{
+    background-color:#EAEAEA;
+}
+.wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 50px;
+        }
+        button{
+            padding: 20px;
+            margin: 10px;
+            font-size: larger;
+            font-weight: 500;
+            border-radius: 10px;
+        }
+        ul li{
+            list-style: none;
+            padding: 10px;
+        }
+        button:hover{
+    color:#fff;
+    background-color: rgb(30, 138, 138);
+    border: 1px solid #fff;
+}
+    </style>
+    </head>
+</head>
+<body>
+    <div class="wrapper">
+        <button id="toggleButton">UG-Compelted</button>
+        <ul id="myList">
+            <li><details><summary>
+                MBA-(Master of Business Administration)
+            </summary>
+            <p>MBA is a postgraduate degree that focuses on business management and administration. It equips students with skills and knowledge in areas such as:</p>
+          <h2>core subjects</h2>
+            <ul>
+                <li>Management principles and practices</li>
+                <li>Business strategy</li>
+                <li>Finance and accounting</li>
+                <li>Marketing management</li>
+                <li>Human resources management</li>
+                <li>Operations management</li>
+                <li>Entrepreneurship</li>
+                <li>Economics</li>
+                <li>Organizational behavior</li>
+                <li>Business ethics and corporate governance</li>
+            </ul>
+            <p>MBA programs often include case studies, projects, internships, and opportunities for networking, preparing graduates for leadership roles in various industries.</p>
+        </body>
+        </details></li>
+            <li><details><summary>
+                MCA-(Master of Computer Application)
+            </summary>
+            <p>MCA is a postgraduate degree in computer applications. It focuses on:</p>
+            <h2>Core subjects</h2>
+            <ul>
+                <li>Software development</li>
+                <li>Programming languages</li>
+                <li>Database management</li>
+                <li>Computer networks</li>
+                <li>Web development</li>
+                <li>Software engineering</li>
+                <li>System design and analysis</li>
+                <li>Operating systems</li>
+                <li>Project management</li>
+                <li>Information security</li>
+            </ul>
+            <p>MCA programs typically include theoretical study, practical assignments, projects, and internships, preparing graduates for careers in software development, IT consulting, system administration, and related fields.</p>
+        </details></li>
+            <li><details><summary>
+               M com-(Master of commerce)
+            </summary>
+            <p>M.Com is a postgraduate degree in commerce that focuses on:</p>
+            <ul>
+                <li>Advanced studies in accounting</li>
+                <li>Business economics</li>
+                <li>Financial management</li>
+                <li>Business law and taxation</li>
+                <li>Corporate governance</li>
+                <li>Marketing management</li>
+                <li>International business</li>
+                <li>Statistics and research methodology</li>
+                <li>E-commerce and digital marketing</li>
+                <li>Entrepreneurship</li>
+            </ul>
+            <p>M.Com programs typically include case studies, research projects, and practical applications, preparing graduates for careers in accounting, finance, banking, consulting, and various business sectors.</p>
+        </details></li>
+        </ul>
+        <button id="toggleButton1">PG-Compelted</button>
+        <ul id="myL">
+            <li></li>
+            <li><details><summary>M.Phil (Master of Philosophy)</summary>
+                <p>M.Phil is a postgraduate research degree that focuses on:</p>
+                <ul>
+                    <li>Advanced research in a specific field of study</li>
+                    <li>Research methodology and techniques</li>
+                    <li>Literature review and critical analysis</li>
+                    <li>Thesis writing and presentation</li>
+                    <li>Academic writing and publication</li>
+                    <li>Ethics in research</li>
+                </ul>
+                <p>M.Phil programs are designed to develop research skills and critical thinking, preparing students for careers in academia, research institutions, and specialized fields.</p>
+            </details></li>
+            <li><details><summary>
+                PhD (Doctor of Philosophy)
+            </summary>
+            <p>A PhD is the highest academic degree awarded by universities in various fields of study. It involves:</p>
+            <ul>
+                <li>Original research contributing to the knowledge in a specific field</li>
+                <li>Development of new theories, methodologies, or applications</li>
+                <li>Thesis writing and defense</li>
+                <li>Publication of research findings in academic journals</li>
+                <li>Advanced study of specialized topics</li>
+                <li>Collaboration with academic advisors and peers</li>
+            </ul>
+            <p>PhD programs are intensive and require strong analytical, critical thinking, and research skills. Graduates pursue careers in academia, research institutions, industry, and government.</p>        
+        </details></li>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById("toggleButton").addEventListener("click", function() {
+            var list = document.getElementById("myList");
+            if (list.style.display === "none") {
+                list.style.display = "block";
+                this.textContent = "Here are course you can pursue";
+            } else {
+                list.style.display = "none";
+                this.textContent = "UG-compeleted";
+            }
+        });
+        document.getElementById("toggleButton1").addEventListener("click", function() {
+            var list = document.getElementById("myL");
+            if (list.style.display === "none") {
+                list.style.display = "block";
+                this.textContent = "Here are course you can pursue";
+            } else {
+                list.style.display = "none";
+                this.textContent = "UG-compeleted";
+            }
+        });
+    </script>
+</body>
+</html>
