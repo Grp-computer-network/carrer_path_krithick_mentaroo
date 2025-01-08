@@ -5,15 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Career-path</title>
+    <style>
+      .blink{
+        font-size: 24px;
+        font-weight: bold;
+        color: black;
+        animation: blink 1s infinite;
+      }
+      @keyframes blink{
+        0%,100%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0;
+        }
+      }
+    </style>
 </head>
 <body>
     <header>
-        <h2>Career-path-recommondation</h2>
+        <h2 >Career-path-recommondation</h2>
     </header>
     <br>
     <br>
     <br>
+    <center>
+     <h2 style="padding-bottom: 10px;" class="blink">Login or sign up to continue</h2>
+    </center>
     <div class="wrapper">
+        <h2></h2>
     <h3 class="respon_wrapper" >
         HI welcome to our page 
         <a href="login.html"><button id="btn" >Login-in</button></a>
@@ -40,7 +60,6 @@
     <center>
     <a href="main.html"><button >continue</button></a>
     </center>
-  
 </div>
 </div>
 </body>
